@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- you have to use the following link to get Andika fonts-->
     <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Roñjake Ṃokta: Ainikien Ko</title>
   </head>
-  <style>
+  <style type="text/css">
     td {
       text-align: center;
       font-family: Andika;
+<!--	  justify-content: center; -->
     }
+	body{
+<!--      display: flex; -->
+	  justify-content: center;
+	}
+	#btn{
+	  border-radius: 6px;
+	  padding: 6px;
+	  font-size: 30px;
+      font-family: Andika;
+	  background-color: #FFF8DC; <!-- "cornsilk" -->
+<!--	  color: #FFF8DC; -->
+	}
   </style>
   <body>
     <h1>Roñjake Ṃokta: Ainikien Ko</h1>
-    <h2>Fast Audio Reference: The Phonemes</h2>
+<!--    <h2>Fast Audio Reference: The Phonemes</h2> -->
     <h3>Lelkan 1. Baoḷ ko Ṃokta im Wi (The Primary Vowels and Wi)</h3>
     <table border="4" cellpadding="10" cellspacing="0">
       <tr>
@@ -44,9 +58,9 @@
         </td>
         <td></td>
         <td>
-          <button onclick="rAT.play();">at</button><br>
-          <button onclick="rBAT.play();">bat</button><br>
-          <button onclick="rTA.play();">ta</button>
+          <button id="btn" onclick="rAT.play();"><span style="color: red">a</span>t</button><br>
+          <button id="btn" onclick="rBAT.play();">b<span style="color: red">a</span>t</button><br>
+          <button id="btn" onclick="rTA.play();">t<span style="color: red">a</span></button>
         </td>
       </tr>
       <!--
@@ -70,9 +84,9 @@ E
         </td>
         <td></td>
         <td>
-          <button onclick="rENNO.play();">ennọ</button><br>
-          <button onclick="rDED.play();">ded</button><br>
-          <button onclick="rAE.play();">ae</button><br>ilo <i><b>ae</b> i lọjet</i>
+          <button id="btn" onclick="rENNO.play();"><span style="color: red">e</span>nnọ</button><br>
+          <button id="btn" onclick="rDED.play();">d<span style="color: red">e</span>d</button><br>
+          <button id="btn" onclick="rAE.play();">a<span style="color: red">e</span></button><br>ilo <i><b>ae</b> i lọjet</i>
         </td>
       </tr>
       <tr>
@@ -92,6 +106,11 @@ E
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rIP.play();"><span style="color: red">i</span>p</button></br>
+          <button id="btn" onclick="rNIN.play();">n<span style="color: red">i</span>n</button><br>
+          <button id="btn" onclick="rNI.play();">n<span style="color: red">i</span></button>
+        </td>
       </tr>
       <tr>
         <td>
@@ -179,9 +198,9 @@ E
         </td>
         <td></td>
         <td>
-          <button onclick="rAJ.play();">āj</button><br>
-          <button onclick="rMAJ.play();">māj</button><br>
-          <button onclick="rPA.play();">pā</button>
+          <button id="btn" onclick="rAJ.play();"><span style="color: red">ā</span>j</button><br>
+          <button id="btn" onclick="rMAJ.play();">m<span style="color: red">ā</span>j</button><br>
+          <button id="btn" onclick="rPA.play();">p<span style="color: red">ā</span></button>
         </td>
       </tr>
       <!--
@@ -206,8 +225,8 @@ E-UT
         <td></td>
         <td>
           <button></button><br>
-          <button onclick="rNEN.play();">nen</button><br>
-          <button onclick="rAE.play();">ae</button><br>ilo <b><i>ae</b> waini</i>
+          <button id="btn" onclick="rNEN.play();">n<span style="color: red">e</span>n</button><br>
+          <button id="btn" onclick="rAE.play();">a<span style="color: red">e</span></button><br>ilo <b><i>ae</b> waini</i>
         </td>
       </tr>
       <tr>
@@ -354,8 +373,8 @@ E-UT
         </td>
         <td></td>
         <td>
-          <button onclick="rBA.play();">ba</button><br>
-          <button onclick="rOB.play();">ob</button>
+          <button id="btn" onclick="rBA.play();"><span style="color: red">b</span>a</button><br>
+          <button id="btn" onclick="rOB.play();">o<span style="color: red">b</span></button>
         </td>
       </tr>
       <tr>
@@ -376,7 +395,7 @@ E-UT
         </td>
         <td></td>
         <td>
-          <button onclick="rBWE.play();">bwe</button>
+          <button id="btn" onclick="rBWE.play();"><span style="color: red">bw</span>e</button>
         </td>
       </tr>
       <tr>
@@ -396,6 +415,11 @@ E-UT
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rJAN.play();"><span style="color: red">j</span>añ</button><br>
+          <button id="btn" onclick="rBAJJEK.play();">ba<span style="color: red">jj</span>ek</button><br>
+          <button id="btn" onclick="rMAJ_2.play();">ṃa<span style="color: red">j</span></button>
+        </td>
       </tr>
       <tr>
         <td>
@@ -415,6 +439,9 @@ E-UT
         </td>
         <td></td>
       </tr>
+      <!--
+K
+       -->
       <tr>
         <td>
           <audio controls>
@@ -432,7 +459,16 @@ E-UT
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rKE.play();"><span style="color: red">k</span>e</button><br>
+          <button id="btn" onclick="rAKKI.play();">a<span style="color: red">kk</span>i</button><br>
+          <button id="btn" onclick="rBOK.play();">bo<span style="color: red">k</span></button><br>
+          <button id="btn" onclick="rBOK_2.play();">bō<span style="color: red">k</span></button>
+        </td>
       </tr>
+      <!-- 
+KW
+      -->
       <tr>
         <td>
           <audio controls>
@@ -450,6 +486,9 @@ E-UT
           </video>
         </td>
         <td></td>
+        <td>
+          <button onclick="rKWE.play();"><span style="color: red">kw</span>e</button>
+        </td>
       </tr>
     </table>
     <br><br>
@@ -466,7 +505,8 @@ E-UT
         <th>PIJA: KŌRĀ</th>
       </tr>
       <!--
-M      -->
+M      
+      -->
       <tr>
         <td>
           <audio controls>
@@ -484,7 +524,14 @@ M      -->
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rMAAN.play();"><span style="color: red">m</span>aañ</button><br>
+          <button id="btn" onclick="rAM.play();">a<span style="color: red">m</span></button>
+        </td>
       </tr>
+      <!--
+Ṃ
+      -->
       <tr>
         <td>
           <audio controls>
@@ -502,7 +549,15 @@ M      -->
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rMAAN_2.play();"><span style="color: red">ṃ</span>aan</button><br>
+          <button id="btn" onclick="rKOMMAN.play();">kō<span style="color: red">ṃṃ</span>an</button><br>
+          <button id="btn" onclick="rAM_2.play();">a<span style="color: red">ṃ</span></button>
+        </td>
       </tr>
+      <!--
+ṂW
+      -->
       <tr>
         <td>
           <audio controls>
@@ -522,7 +577,13 @@ M      -->
           -->
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rMWEO.play();"><span style="color: red">ṃw</span>eo</button>
+        </td>
       </tr>
+      <!--
+N
+      -->
       <tr>
         <td>
           <audio controls>
@@ -540,7 +601,15 @@ M      -->
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rNE.play();"><span style="color: red">n</span>e</button><br>
+          <button id="btn" onclick="rENNO.play();">e<span style="color: red">nn</span>ọ</button><br>
+          <button id="btn" onclick="rEN.play();">e<span style="color: red">n</span></button>
+        </td>
       </tr>
+      <!--
+Ṇ
+      -->
       <tr>
         <td>
           <audio controls>
@@ -558,7 +627,18 @@ M      -->
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rNE_2.play();"><span style="color: red">ṇ</span>e</button><br>
+          <button id="btn" onclick="rENNOJNOJ.play();">e<span style="color: red">ṇṇ</span>ōj<span style="color: red">ṇ</span>ōj</button><br>
+          <button id="btn" onclick="rNOB.play();"><span style="color: red">ṇ</span>ọb</button><br>
+          <button id="btn" onclick="rEN_2.play();">e<span style="color: red">ṇ</span></button><br>
+          <button id="btn" onclick="rTON.play();">tō<span style="color: red">ṇ</span></button><br>
+          <button id="btn" onclick="rTON_2.play();">to<span style="color: red">ṇ</span></button>
+        </td>
       </tr>
+      <!--
+Ñ
+      -->
       <tr>
         <td>
           <audio controls>
@@ -609,6 +689,9 @@ M      -->
         <th>PIJA: KŌRĀ</th>
         <th>WAAN JOÑAK</th>
       </tr>
+      <!--
+L
+      -->
       <tr>
         <td>
           <audio controls>
@@ -626,7 +709,15 @@ M      -->
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rLEDDIK.play();"><span style="color: red">l</span>eddik</button><br>
+          <button id="btn" onclick="rPALLE.play();">pā<span style="color: red">ll</span>e</button><br>
+          <button id="btn" onclick="rAL.play();">a<span style="color: red">l</span></button><br>
+        </td>
       </tr>
+      <!--
+Ḷ
+      -->
       <tr>
         <td>
           <audio controls>
@@ -644,7 +735,16 @@ M      -->
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rLADDIK.play();"><span style="color: red">ḷ</span>addik</button><br>
+          <button id="btn" onclick="rLOLLAP.play();"><span style="color: red">ḷ</span>ō<span style="color: red">ḷḷ</span>ap</button><br>
+          <button id="btn" onclick="rLOL.play();"><span style="color: red">ḷ</span>ō<span style="color: red">ḷ</span></button><br>
+          <button id="btn" onclick="rTOL.play();">to<span style="color: red">ḷ</span></button>
+        </td>
       </tr>
+      <!--
+ḶW
+      -->
       <tr>
         <td>
           <audio controls>
@@ -662,6 +762,9 @@ M      -->
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rLWE.play();"><span style="color: red">ḷw</span>e</button>
+        </td>
       </tr>
       <tr>
         <td>
@@ -681,9 +784,9 @@ M      -->
         </td>
         <td></td>
         <td>
-          <button onclick="rDI.play();">di</button><br>
-          <button onclick="rADDI.play();">addi</button><br>
-          <button onclick="rAD.play();">ad</button>
+          <button id="btn" onclick="rDI.play();"><span style="color: red">d</span>i</button><br>
+          <button id="btn" onclick="rADDI.play();">a<span style="color: red">dd</span>i</button><br>
+          <button id="btn" onclick="rAD.play();">a<span style="color: red">d</span></button>
         </td>
       </tr>
       <tr>
@@ -743,49 +846,62 @@ var rAE = new Audio();
 var rNEN = new Audio();
 
 // i
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rIP = new Audio();
+var rNIN = new Audio();
+var rNI = new Audio();
 
 // j
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rJAN = new Audio();
+var rBAJJEK = new Audio();
+var rMAJ_2 = new Audio();
 
 // k
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rKE = new Audio();
+var rAKKI = new Audio();
+var rBOK = new Audio();
+var rBOK_2 = new Audio();
+
+// kw
+var rKWE = new Audio();
 
 // l
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rLEDDIK = new Audio();
+var rPALLE = new Audio();
+var rAL = new Audio();
 
 // ḷ
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rLADDIK = new Audio();
+var rLOLLAP = new Audio();
+var rLOL = new Audio();
+var rTOL = new Audio();
+
+// ḷw
+var rLWE = new Audio();
 
 // m
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rMAAN = new Audio();
+var rAM = new Audio();
 
 // ṃ
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rMAAN_2 = new Audio();
+var rKOMMAN = new Audio();
+var rAM_2 = new Audio();
+
+// ṃw
+var rMWEO = new Audio();
 
 // n
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rNE = new Audio();
+//// enno
+var rEN = new Audio();
 
 // ṇ
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rNE_2 = new Audio();
+var rENNOJNOJ = new Audio();
+var rNOB = new Audio();
+var rEN_2 = new Audio();
+var rTON = new Audio();
+var rTON_2 = new Audio();
 
 // ñ
 var rAT = new Audio();
@@ -873,49 +989,62 @@ rAE.src = "ae.mp3";// e-utiej men in
 
 
 // i
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rIP.src = "ip.mp3";
+rNIN.src = "nin.mp3";
+rNI.src = "ni.mp3";
 
 // j
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rJAN.src = "jan.mp3";
+rBAJJEK.src = "bajjek.mp3";
+rMAJ_2.src = "maj_2.mp3";
 
 // k
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rKE.src = "ke.mp3";
+rAKKI.src = "akki.mp3";
+rBOK.src = "bok.mp3";
+rBOK_2.src = "bok_2.mp3";
+
+// kw
+rKWE.src = "kwe.mp3";
 
 // l
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rLEDDIK.src = "leddik.mp3";
+rPALLE.src = "palle.mp3";
+rAL.src = "al.mp3";
 
 // ḷ
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rLADDIK.src = "laddik.mp3";
+rLOLLAP.src = "lollap.mp3";
+rLOL.src = "lol.mp3";
+rTOL.src = "tol.mp3";
+
+// ḷw
+rLWE.src = "lwe.mp3";
+
 
 // m
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rMAAN.src = "maan.mp3";
+rAM.src = "am.mp3";
 
 // ṃ
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rMAAN_2.src = "maan_2.mp3";
+rKOMMAN.src = "komman.mp3";
+rAM_2.src = "am_2.mp3";
+
+// ṃw
+rMWEO.src = "mweo.mp3";
 
 // n
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rNE.src = "ne.mp3";
+rEN.src = "en.mp3";
 
 // ṇ
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rNE_2.src = "ne_2.mp3";
+rENNOJNOJ.src = "ennojnoj.mp3";
+rNOB.src = "nob.mp3";
+rEN_2.src = "en_2.mp3";
+rTON.src = "ton.mp3";
+rTON_2.src = "ton_2.mp3";
 
 // ñ
 rAT.src = "at.mp3";
