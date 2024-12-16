@@ -164,6 +164,12 @@ U
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rUM.play();"><span style="color: red">u</span>ṃ</button></br>
+          <button id="btn" onclick="rKUUM.play();">k<span style="color: red">uu</span>ṃ</button></br>
+          <button id="btn" onclick="rBU.play();">b<span style="color: red">u</span></button></br>
+        </td>
+
       </tr>
       <!--
 W
@@ -185,6 +191,12 @@ W
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rWIWI.play();"><span style="color: red">w</span>i<span style="color: red">w</span>i</button><br>
+          <button id="btn" onclick="rJOWAN.play();">jo<span style="color: red">w</span>an</button><br>
+          <button id="btn" onclick="rUWI.play();">u<span style="color: red">w</span>i</button>
+        </td>
+
       </tr>
     </table>
     <br><br>
@@ -374,6 +386,12 @@ O-utiej
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rUROJ.play();"><span style="color: red">ū</span>rōj</button><br>
+          <button id="btn" onclick="rBUB.play();">b<span style="color: red">ū</span>b</button><br>
+          <button id="btn" onclick="rBUBU.play();">b<span style="color: red">ū</span>b<span style="color: red">ū</span></button>
+        </td>
+
       </tr>
     </table> 
     <br><br>
@@ -733,6 +751,12 @@ N
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rNGA.play();"><span style="color: red">ñ</span>a</button><br>
+          <button id="btn" onclick="rINNA.play();">i<span style="color: red">ññ</span>ā</button><br>
+          <button id="btn" onclick="rANG.play();">a<span style="color: red">ñ</span></button><br>
+          <button id="btn" onclick="rBONG.play();">bo<span style="color: red">ñ</span></button>
+        </td>
       </tr>
       <!--
 ÑW
@@ -754,6 +778,9 @@ N
           </video>
         </td>
         <td></td>
+        <td>
+          <button id="btn" onclick="rAENWANWA.play();">ae<span style="color: red">ñw</span>ā<span style="color: red">ñw</span>ā</button><br>
+        </td>
       </tr>
     </table>
     <br><br>
@@ -893,8 +920,8 @@ R
         </td>
         <td></td>
         <td>
+          <button id="btn" onclick="rROT.play();"><span style="color: red">r</span>ot</button><br>
           <button id="btn" onclick="rROK.play();"><span style="color: red">r</span>ōk</button><br>
-          <button id="btn" onclick="rROT.play();"><span style="color: red">r</span>ōt</button><br>
           <button id="btn" onclick="rRORROR.play();"><span style="color: red">r</span>o<span style="color: red">rr</span>o<span style="color: red">r</span></button><br>
           <button id="btn" onclick="rAR.play();">a<span style="color: red">r</span></button>
         </td>
@@ -996,9 +1023,13 @@ var rTON = new Audio();
 var rTON_2 = new Audio();
 
 // ñ
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rNGA = new Audio();
+var rINNA = new Audio();
+var rANG = new Audio();
+var rBONG = new Audio();
+
+// ñw
+var rAENWANWA = new Audio();
 
 // o
 var rOROR = new Audio();
@@ -1040,19 +1071,19 @@ var rETTO = new Audio();
 var rATAT = new Audio();
 
 // u
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rUM = new Audio();
+var rKUUM = new Audio();
+var rBU = new Audio();
 
 // ū
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rUROJ = new Audio();
+var rBUB = new Audio();
+var rBUBU = new Audio();
 
 // w
-var rAT = new Audio();
-var rBAT = new Audio();
-var rTA = new Audio();
+var rWIWI = new Audio();
+var rJOWAN = new Audio();
+var rUWI = new Audio();
 
 // read the audio from these files
 
@@ -1148,9 +1179,13 @@ rTON.src = "ton.mp3";
 rTON_2.src = "ton_2.mp3";
 
 // ñ
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rNGA.src = "nga.mp3";
+rINNA.src = "inna.mp3";
+rANG.src = "ang.mp3";
+rBONG.src = "bong.mp3";
+
+// ñw
+rAENWANWA.src = "aenwanwa.mp3";
 
 // o
 rOROR.src = "oror.mp3";
@@ -1192,19 +1227,19 @@ rETTO.src = "etto.mp3";
 rATAT.src = "atat.mp3";
 
 // u
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rUM.src = "um.mp3";
+rKUUM.src = "kuum.mp3";
+rBU.src = "bu.mp3";
 
 // ū
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rUROJ.src = "uroj.mp3";
+rBUB.src = "bub.mp3";
+rBUBU.src = "bubu.mp3";
 
 // w
-rAT.src = "at.mp3";
-rBAT.src = "bat.mp3";
-rTA.src = "ta.mp3";
+rWIWI.src = "wiwi.mp3";
+rJOWAN.src = "jowan.mp3";
+rUWI.src = "uwi.mp3";
 
 
 </script>
